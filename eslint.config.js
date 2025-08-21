@@ -25,6 +25,6 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
-    eslintConfigPrettier,
+    ...eslintConfigPrettier,
   }
 );
