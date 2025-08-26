@@ -1,0 +1,17 @@
+@mixin focus-ring($color: #99a3ff) {
+  outline: 2px solid $color;
+  outline-offset: 2px;
+}
+
+@mixin rounded($radius: $radius-md) {
+  border-radius: $radius;
+}
+
+@mixin theme-colors($bg, $fg, $primary, $primaryContrast) {
+  --color-bg: #{$bg};
+  --color-fg: #{$fg};
+  --color-primary: #{$primary};
+  --color-primary-contrast: #{$primaryContrast};
+}
+
+

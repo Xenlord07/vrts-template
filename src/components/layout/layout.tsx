@@ -14,7 +14,7 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       <footer>
-        <p>&copy; 2024 VRTS Template. All rights reserved.</p>
+        <p>&copy; 2025 VRTS Template. All rights reserved.</p>
       </footer>
     </div>
   );
