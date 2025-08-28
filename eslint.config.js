@@ -26,5 +26,8 @@ export default tseslint.config(
       ],
     },
     ...eslintConfigPrettier,
+    rules: {
+      "prettier/prettier": ["warn", { endOfLine: "auto" }],
+    },
   }
 );
