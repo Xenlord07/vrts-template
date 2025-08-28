@@ -1,0 +1,20 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+:root,
+[data-theme="light"] {
+  // Light theme (default)
+  @include theme-colors(
+    $color-bg,
+    $color-fg,
+    $color-primary,
+    $color-primary-contrast
+  );
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  @include theme-colors(#1f2025, #f2efe9, #6a9b94, #e5c27c);
+}
+
+/* Keep explicit dark only; light inherited above */

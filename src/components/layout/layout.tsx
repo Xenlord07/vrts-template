@@ -1,14 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navigation from "../navbar/navbar";
-import "./layout.css";
+import Navbar from "../navbar/navbar";
+import "./layout.scss";
 
 const Layout: React.FC = () => {
   return (
     <div className="layout">
       <header>
-        <h1>VRTS Template</h1>
-        <Navigation />
+        <Navbar />
       </header>
       <main>
         <Outlet />

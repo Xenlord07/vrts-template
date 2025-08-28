@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./navbar.scss";
+import ThemeSwitch from "../theme-switch/theme-switch";
 
 const Navbar: React.FC = () => {
   return (
@@ -16,6 +17,9 @@ const Navbar: React.FC = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      <div className="navbar-actions">
+        <ThemeSwitch />
+      </div>
     </nav>
   );
 };

@@ -1,8 +1,9 @@
-// Color tokens
-$color-primary: #646cff;
-$color-primary-contrast: #ffffff;
-$color-bg: #ffffff;
-$color-fg: #213547;
+// Color tokens (light theme defaults)
+// From user palette: base #F2EFE9, font #2E2C2A, primary #4A6D7C, contrast #B8C39D
+$color-primary: #4A6D7C;
+$color-primary-contrast: #B8C39D;
+$color-bg: #F2EFE9;
+$color-fg: #2E2C2A;
 
 // Spacing scale
 $space-1: 0.25rem;

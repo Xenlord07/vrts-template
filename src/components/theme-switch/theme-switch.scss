@@ -1,0 +1,51 @@
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-fg);
+  border: 1px solid color-mix(in srgb, var(--color-fg) 20%, var(--color-bg));
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.theme-switch .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.theme-switch .track {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: color-mix(in srgb, var(--color-fg) 12%, var(--color-bg));
+  border-radius: 999px;
+}
+
+.theme-switch .thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+[data-theme="dark"] .theme-switch .thumb {
+  transform: translateX(16px);
+}
+
+.theme-switch .label {
+  font-size: 0.875rem;
+}
+
+
